@@ -120,7 +120,7 @@ export default {
       if (confirmation) {
         try {
           // Send a request to delete the task
-          await this.$http.delete(`http://localhost:8000/api/tasks/${task.id}`);
+          await this.$http.delete(`http://localhost:8000/api/tasks/${task.id}/`);
 
           // Refresh the tasks
           this.getData();
